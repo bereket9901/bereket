@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #161616;
+  /* background-color: #242424; */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 481px) {
+  .section-landing {
+    background-image: url("./assets/me2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 55%;
+    height: 100vh;
+    padding-top: 27vh;
+    transition: display 0.5s ease-in-out, flex-flow 0.5s ease-in-out;
+  }
+  .circle-div {
+    padding-top: 17vh;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .section-landing {
+    background-image: url("./assets/me2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 42vh;
+  }
+  .circle-div {
+    padding-top: 10vh;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .section-landing {
+    background-image: url("./assets/me2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-top: 42vh;
+    height: 100vh;
+  }
+  .circle-div {
+    padding-top: 10vh;
+  }
+}
+.main-text {
+  color: #e6d9b2;
+  font-family: Lily Script One, Arial, Helvetica, sans-serif !important;
+}
+/* rotating circle css */
+p {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  animation: effect 0.01s linear infinite;
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0px 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: small;
+  color: rgb(239 68 68);
+}
+.sacramento-regular {
+  font-family: "Sacramento", cursive;
+  color: #e6d9b2;
+}
+
+.lexend-regular {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: rgb(239 68 68);
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+#save-the-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
