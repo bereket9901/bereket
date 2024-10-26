@@ -27,7 +27,7 @@
     transition: display 0.5s ease-in-out, flex-flow 0.5s ease-in-out;
   }
   .circle-div {
-    padding-top: 17vh;
+    padding-top: 12vh;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 800px) {
