@@ -5,6 +5,7 @@ import imageTwo from '../assets/me4.jpg';
 import imageThree from '../assets/me5.jpg';
 import imageFour from '../assets/me6.jpg';
 import imageFive from '../assets/me7.jpg';
+import imageSix from '../assets/me8.jpg';
 const CircularText = () => {
   const text = "♡ getting married ♡ Praise Jesus";
 
@@ -57,6 +58,7 @@ const CircularText = () => {
             <img src={imageOne} className='rounded-3xl' alt='photo' />
             <img src={imageFour} className='rounded-3xl' alt='photo' />
             <img src={imageFive} className='rounded-3xl' alt='photo' />
+            <img src={imageSix} className='rounded-3xl' alt='photo' />
           </div>
         </section>
       </main>
